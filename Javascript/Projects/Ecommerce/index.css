@@ -1,0 +1,121 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+   background-color: #f9f9f9;
+  color: #333333; /* dark gray text for less strain than pure black */
+}
+
+header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  background-color: #005f73; /* dark teal blue */
+  color: #ffffff;            /* white text */
+  font-size: 22px;
+  line-height: 1.4;
+  padding: 1rem;             /* some padding for spacing */
+}
+
+.store{
+    margin:3px;
+    padding:3px;
+}
+.search-products {
+  flex-grow: 1;          
+  display: flex;         
+  justify-content: center; 
+}
+
+.icon{
+    margin-left:auto
+}
+
+#site-search{
+    padding:10px;
+    font-size:15px;
+    margin:5px;
+     border-radius:3px;
+     border:2px solid white;
+}
+
+.submit{
+    padding:10px;
+    font-size:15px;
+    margin:5px;
+    border-radius:3px;
+     border:2px solid white;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Easier to read on mobile */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* spacing between header items */
+    }
+   .icon{
+    display:none;
+   }
+    .search-products {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #site-search,
+    .submit {
+        width: 90%;  /* Full-width inputs/buttons */
+        box-sizing: border-box;
+    }
+}
+
