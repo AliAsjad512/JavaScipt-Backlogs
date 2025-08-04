@@ -30,3 +30,52 @@ We will not add any payment system in this version
 
 ## Design Requirement 
 
+
+
+
+# Making PRD of TODO apps
+
+
+## Objective
+Build a  website for Todo app. Where a student can manage all his college tasks
+
+
+## Scope
+
+Buid cards where user can see his today taks
+See class timing and schduke meeting
+Receivce remwinders of class and study time
+Have all professor name according to suject wise 
+
+
+
+
+
+## Features and Requirement 
+
+
+### P1
+- Signup/login
+- Pictures of different subjects , professor
+- Details of each task 
+- ADD , DELTE, EIDT buttons 
+ - All Task button
+ - profie picture
+### p2
+- Do not need payment stuff
+
+## User Stories or User Cases 
+- When user click on any button it perform action according to button
+- when user hit the all task button he can see all his records
+- A user can see his personla after clicking the profie button
+
+
+
+## Technical Requirement 
+-HTML
+- CSS
+-JS
+
+## Design Requirement 
+  
+
