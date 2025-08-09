@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <style>
+    figure {
+      display: grid;
+      grid-template-columns: 3em 9em 1fr 1fr 6em 3em;
+      grid-template-rows: 3em 9em 1fr 6em 3em;
+      position: relative; /* for z-index stacking */
+      margin: 2em;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      min-height: 300px;
+    }
+
+    figure::before {
+      content: "";
+      grid-column: 2 / 7;
+      grid-row: 2 / 7;
+      display: block;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+      border-radius: 8px;
+    }
+
+    figure::after {
+      content: "";
+      grid-column: 1 / 7;
+      grid-row: 1 / 7;
+      display: block;
+      background: #e0dde4;
+      z-index: -2; /* behind ::before */
+      border-radius: 8px;
+    }
+
+    img {
+      grid-column: 4 / 6;
+      grid-row: 3 / 4;
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      z-index: 1; /* above background */
+      justify-self: center;
+      align-self: center;
+    }
+
+    figcaption {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4;
+      display: grid;
+      grid-template-columns: 3fr 1fr 2fr;
+      z-index: 2; /* above everything */
+      padding-left: 1em;
+      color: #222;
+      align-self: center;
+      color:white;
+      border-radius: 8px;
+    }
+
+    blockquote {
+      margin: 0;
+      font-style: italic;
+    }
+
+    cite {
+      grid-column: 1 / -1;
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 0.3em;
+    }
+
+    p {
+      grid-column: 1 / -1;
+      font-size: 0.8em;
+      margin-top: 0.5em;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <figure class="card">
+    <img src="./22-8 (1).jpg" alt="Image description" />
+    <figcaption>
+      <blockquote>We shape our tools (…) </blockquote>
+      <cite>Attributed to Winston Churchill, Marshall McLuhan (…) </cite>
+      <p><strong>Caju Gomes</strong>, <a href="…">Unsplash</a></p>
+    </figcaption>
+  </figure>
+</body>
+</html>
