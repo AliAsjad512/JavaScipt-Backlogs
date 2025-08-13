@@ -25,14 +25,16 @@
         width: 30%;
         border-radius: 15px;
         text-align: center;
-        padding: 20px ;
+        padding: 20px 50px;
          box-shadow: 0 0 10px black;
+         
     }
       .card img{
+       
         width: 200px;
         object-fit: cover;
         border-radius: 20px; 
-      
+       
     }
     h3{
         margin: 20px 0px;
@@ -41,19 +43,18 @@
       margin: 20px 0px;
     }
  
-/* media Query */
 
-@media  screen and (max-width:976px) {
-    .three-cards img{
-        object-fit: cover;
-    }
-}
 
-@media  screen and (min-width:480px) and (max-width:976px){
-    .three-cards img{
-        object-fit: cover;
+ @media  screen and (max-width:976px){
+    .three-cards {
+        flex-direction: column;
+        justify-content: center;
     }
-}
+    .three-cards div{
+        width: 80%;
+    }
+} 
+
 
     </style>
 </head>
