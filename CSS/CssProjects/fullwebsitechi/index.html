@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .three-cards{
+        display: flex;
+        border: 2px solid black;
+        margin: 20px 10%;
+        justify-content: space-evenly;
+        padding: 40px 80px;
+        box-shadow: 0 0 10px black;
+
+    }
+  
+    .card{
+        border: 2px solid black;
+        width: 30%;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px ;
+         box-shadow: 0 0 10px black;
+    }
+      .card img{
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20px; 
+      
+    }
+    h3{
+        margin: 20px 0px;
+    }
+    .card p{
+      margin: 20px 0px;
+    }
+ 
+/* media Query */
+
+@media  screen and (max-width:976px) {
+    .three-cards img{
+        object-fit: cover;
+    }
+}
+
+@media  screen and (min-width:480px) and (max-width:976px){
+    .three-cards img{
+        object-fit: cover;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+  <section class="three-cards">
+<div class="card">
+    <img src="https://media.istockphoto.com/id/2151113872/photo/handsome-young-man-portrait-on-the-street-new-york.jpg?s=1024x1024&w=is&k=20&c=c-uTFQXsNSoZ8guLehcMWQUMEj4ZfsbisAWCsDr2-vc=" alt="">
+
+    <h3>Hi! This is  Ali Abbas</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, blanditiis!</p>
+
+
+</div>
+<div class="card">
+    <img   src = "https://media.istockphoto.com/id/2151113872/photo/handsome-young-man-portrait-on-the-street-new-york.jpg?s=1024x1024&w=is&k=20&c=c-uTFQXsNSoZ8guLehcMWQUMEj4ZfsbisAWCsDr2-vc=" alt="">
+
+    <h3>Hi! This is  Ali Abbas</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, blanditiis!</p>
+
+
+</div>
+<div class="card">
+    <img src="https://media.istockphoto.com/id/2151113872/photo/handsome-young-man-portrait-on-the-street-new-york.jpg?s=1024x1024&w=is&k=20&c=c-uTFQXsNSoZ8guLehcMWQUMEj4ZfsbisAWCsDr2-vc=" alt="">
+
+    <h3>Hi! This is  Ali Abbas</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, blanditiis!</p>
+
+
+</div>
+
+  </section>
+    
+</body>
+</html>
