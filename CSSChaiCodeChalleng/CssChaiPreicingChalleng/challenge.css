@@ -1,0 +1,127 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+     }
+
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:black;
+        color:white;
+        
+    }
+    .header{
+        margin-left:80px;
+    }
+
+    .header h1{
+        margin-bottom:20px;
+        color:#f96969;
+    }
+    .pricing-card {
+  height: 420px; /* adjust to match your tallest card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+    .pricing-container{
+        display: flex;
+        margin: 4% 0px;
+        gap: 40px;
+        height:420px;
+        
+    }
+.beginner{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap: 10px;
+    padding:20px 20px;
+  border:2px solid black;
+  border-radius:5px;
+  margin:0px 25px;
+  background-color:#262626;
+
+}
+.card-header,.price-block{
+    text-align:center;
+    margin:5px;
+}
+
+.price-block{
+    border:2px solid black;
+    padding: 9px ;
+    border-radius:5px;
+    margin-bottom:15px;
+    background-color:#253900;
+    color:#f96969;
+}
+
+.features{
+    display:flex;
+    flex-direction:column;
+    gap :10px;
+    margin-bottom:15px;
+    list-style:none;
+    
+}
+
+.join-btn{
+    padding:10px 5px;
+    border-radius:5px;
+}
+
+.warrior{
+    display:flex;
+    flex-direction:column;
+     justify-content:center;
+    gap:10px;
+    margin:0px 25px;
+    border:2px solid black;
+    padding:20px 20px;
+     background-color:#9e4949;
+     position:relative;
+     border-radius:5px;
+}
+.popular-tag {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: gold;
+  color: black;
+  padding: 5px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.pricing-card {
+  position: relative; /* so absolute tag stays inside */
+}
+
+/* .popular-tag{
+    position:absolute;
+    top:-12px;
+    right:50px;
+    background-color:yellow;
+    padding:4px 5px;
+    border-radius:5px;
+    color:black;
+    
+
+} */
+
+.champion{
+    display:flex;
+     justify-content:center;
+    flex-direction:column;
+    gap:10px;
+border:2px solid black;
+     padding:20px 20px;
+     background-color:orange;
+     border-radius:5px;
+}
