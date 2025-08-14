@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+main{
+    height:150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    
+
+}
+.topdi{
+    margin-bottom: 20px;
+    color: white;
+}
+.container{
+    display: flex;
+    gap: 40px;
+    
+   
+}
+
+.container button{
+    padding: 15px 20px;
+    
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.fa-check ,.fa-xmark{
+    margin:7px;
+}
+
+
+.beginner{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    padding:30px 30px;
+    background-color: rgba(93, 74, 74, 0.255);
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.beginner div{
+   text-align: center;
+   height: 90px;
+   width: 190px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(183, 30, 30);
+    font-size: 15px;
+   background-color: rgba(106, 106, 106, 0.153);
+    margin-bottom: 30px;
+    
+     
+}
+.beginner button{
+    border: 2px solid red;
+    background-color: black;
+    color: red;
+}
+.price p{
+    font-size: 10px;
+}
+
+
+
+.warrior{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    padding:30px 30px;
+    background-color:rgb(49, 32, 32);
+    color: white;
+    border: 1px solid rgba(255, 0, 0, 0.197);
+    border-radius: 10px;
+
+}
+
+
+.warrior div{
+   text-align: center;
+   height: 90px;
+   width: 190px;
+    background-color: rgba(106, 106, 106, 0.153);
+    border-radius: 10px;
+    color:red;
+    font-size: 15px;
+    margin-bottom: 30px;
+    
+    
+     
+}
+
+.warrior button{
+     border: 1px solid rgba(255, 0, 0, 0.305);
+    background-color: rgba(0, 0, 0, 0.367);
+    color: red;
+}
+
+
+.champion{
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    padding:30px 30px;
+    background-color: rgba(171, 154, 154, 0.373);
+    color: white;
+    border: 2px solid rgba(255, 255, 0, 0.31);
+    border-radius: 10px;
+}
+
+
+.champion div{
+   text-align: center;
+   height: 90px;
+   width: 190px;
+    border: none;
+    border-radius: 10px;
+    color:yellow;
+    font-size: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(106, 106, 106, 0.153);
+    
+    
+     
+}
+.container p{
+    margin-bottom:20px;
+    
+}
+
+.champion button{
+     border: 2px solid rgba(255, 255, 0, 0.722);
+    background-color: rgba(0, 0, 0, 0.367);
+    color: red;
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<main>
+    <div class="topdi">
+        <h1>Chai Aur Fitness</h1>
+   <p>Where Wellness Meets Strength</p>
+    </div>
+   
+   <div class="container">
+    <div class="beginner">
+       <h2>Beginner</h2>
+       <img src="" alt="">
+       <div class="price">
+        <h2>$999</h2>
+        <p>MONTHLY</p>
+
+       </div>
+       <p><i class="fa-solid fa-check"></i>Basic Equipment Access</p>
+       
+       <p><i class="fa-solid fa-check"></i>Guided Workout Plan</p>
+       
+       <p><i class="fa-solid fa-check"></i>Locker Facility</p>
+       <p><i class="fa-solid fa-xmark"></i>Personal Training</p>
+
+       <button>Start Your Journey</button>
+
+
+    </div>
+
+
+    <div class="warrior">
+       <h2>Warrior</h2>
+       <img src="" alt="">
+       <div class="price">
+        <h2>$1,999</h2>
+        <h4>MONTHLY</h4>
+
+       </div>
+       <p><i class="fa-solid fa-check"></i>24/7 Gym Access</p>
+       
+       <p><i class="fa-solid fa-check"></i>Personal Training (2x/week)</p>
+       
+       <p><i class="fa-solid fa-check"></i>Nutrition Guide</p>
+       <p><i class="fa-solid fa-xmark"></i>Group Classes</p>
+
+       <button>Become a warrior</button>
+
+
+    </div>
+
+
+<div class="champion">
+       <h2>Champion</h2>
+       <img src="" alt="">
+       <div class="price">
+        <h2>$3,999</h2>
+        <p>MONTHLY</p>
+
+       </div>
+       <p><i class="fa-solid fa-check"></i>All Warrior Benefits</p>
+       
+       <p><i class="fa-solid fa-check"></i>Daily Personal Training</p>
+       
+       <p><i class="fa-solid fa-check"></i>Custom Meal Plans</p>
+       <p><i class="fa-solid fa-xmark"></i>Recovery Spa Access</p>
+
+       <button>Lead the Pack</button>
+
+
+    </div>
+
+
+
+
+
+   </div>
+
+
+</main>
+
+    
+</body>
+</html>
