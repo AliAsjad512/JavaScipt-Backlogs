@@ -1,0 +1,150 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  /* Add your styles here */
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+h1 {
+  /* Add your styles here */
+  margin-bottom:80px;
+}
+
+.pricing-heading {
+  /* Add your styles here */
+
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display:flex;
+  gap:40px;
+
+}
+
+/* .pricing-container > div {
+  /* Add your styles here */
+  
+
+
+.pricing-card{
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes button to bottom */
+  padding: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align:center;
+}
+.pricing-card.Basic{
+    margin-top:50px;
+    height:450px;
+    width:300px;
+
+}
+
+
+
+.pricing-card:hover {
+  /* Add your styles here */
+  background-color: #eff3f7ff;
+  cursor: pointer; /* Changes cursor to a pointer on hover */
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  
+ position:relative;
+  text-align:center;
+  padding:20px;
+
+  height:550px;
+}
+
+.pricing-card.family {
+  /* Add your styles here */
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:10px;
+  border:2px solid black;
+  text-align:center;
+  padding:20px;
+margin-top:10px;
+  height:530px;
+}
+
+.popular-badge {
+  /* Add your styles here */
+  position:absolute;
+  top:-32px;
+  left:190px;
+  border:2px solid black;
+  border-radius:15px;
+  padding:10px 5px;
+  width:120px;
+  color:white;
+  text-align:center;
+  background-color:black;
+  margin-bottom:140px;
+}
+
+.price {
+  /* Add your styles here */
+  font-size:25px;
+  font-weight: bold; 
+}
+
+.period {
+  /* Add your styles here */
+}
+
+.features {
+  /* Add your styles here */
+  margin-top:10px;
+}
+
+.features li {
+  /* Add your styles here */
+    list-style:none;
+    margin:15px;
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+border-radius: 15px;
+  padding: 10px 20px; /* vertical | horizontal */
+  border: 2px solid transparent;
+  width: 100%; /* makes button full width of card */
+  max-width: 200px; /* optional: prevents it from being too wide */
+  margin: 0 auto; /* center the button if not full width */
+  font-size: 16px;
+  background-color: #fff; 
+  
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  border-color: black; 
+}
