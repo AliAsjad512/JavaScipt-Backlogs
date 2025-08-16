@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: #111; /* fallback background */
+  color: white;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 255, 157);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(0, 255, 157);
+}
+
+
+.hero {
+  min-height: 100vh; /* full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+    url("./assets/chaicohort.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 50px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-content h1 {
+  color: rgb(0, 255, 157);
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content img {
+  border: 3px solid rgb(0, 255, 157);
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Enroll button */
+.enroll-button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: rgb(0, 255, 157);
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enroll-button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+.highlights {
+  display: flex;
+  flex-wrap: wrap; /* responsive layout */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: black;
+  padding: 60px 20px;
+}
+
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(42, 42, 42);
+  height: 220px;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+  padding: 20px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.highlight-card h3 {
+  color: rgb(0, 255, 157);
+}
+
+.highlight-card p {
+  color: white;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .highlights {
+    gap: 20px;
+  }
+}
