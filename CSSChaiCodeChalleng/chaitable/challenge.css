@@ -14,7 +14,7 @@ body {
 
 .container {
   /* Add your styles here */
-  height:100vh;
+  height:120vh;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -57,7 +57,7 @@ h1 {
 .pricing-card.Basic{
     margin-top:50px;
     height:450px;
-    width:300px;
+    
 
 }
 
@@ -87,11 +87,10 @@ h1 {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  gap:10px;
-  border:2px solid black;
+flex-wrap: wrap;
   text-align:center;
   padding:20px;
-margin-top:10px;
+
   height:530px;
 }
 
@@ -108,6 +107,7 @@ margin-top:10px;
   text-align:center;
   background-color:black;
   margin-bottom:140px;
+   background-color:#ea892f; 
 }
 
 .price {
@@ -140,7 +140,7 @@ border-radius: 15px;
   max-width: 200px; /* optional: prevents it from being too wide */
   margin: 0 auto; /* center the button if not full width */
   font-size: 16px;
-  background-color: #fff; 
+  background-color:#ea892f; 
   
 }
 
