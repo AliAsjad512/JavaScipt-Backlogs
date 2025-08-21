@@ -1,18 +1,33 @@
 const product = document.querySelector('.products');
+//const form = document.getElementById('myform');
+const form = document.getElementById("myform");
+const productsDiv = document.querySelector(".products");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const searchValue = document.getElementById("site-search").value.toLowerCase();
+//console.log(searchValue);
+  // Hide all cards that don’t match
+  // let findItems=SerachItems(items);
+
+  // let filteritems= findItems.filter((item) => item.toLowerCase().includes(searchValue));
+
+  
+});
+
 
 async function getProducts() {
   try {
     const response = await fetch('https://dummyjson.com/products');
     const data = await response.json();
     const items = data.products;
-
+    
     items.forEach((data) => {
-        
       const card = document.createElement('div');
-      card.classList.add('card'); // optional, for styling
+      card.classList.add('card');
 
       const productImage = document.createElement('img');
-      productImage.src = data.thumbnail; // Use "thumbnail" or "images[0]"
+      productImage.src = data.thumbnail;
 
       const productName = document.createElement('p');
       productName.textContent = data.title;
@@ -28,35 +43,13 @@ async function getProducts() {
       card.appendChild(productPrice);
       card.appendChild(productStock);
 
-      product.appendChild(card); // ✅ append card to .products container
+      product.appendChild(card);
     });
-    
-
   } catch (error) {
     console.error('Failed to fetch products:', error);
   }
 }
 
-function searchProduct(data){
-   const search = document.getElementById('site-search');
-   console.log(search.value)
-   const submit = document.querySelector('submit')
-//const form = document.querySelector('form');
-
-submit.addEventListener('submit', function (e) {
-  e.preventDefault(); 
-  data.forEach((item)=>{
-    if(item.title.include(search.value)){
-     console.log(item.title)
-    }
-    else{
-  console.log('Not found')
-    }
-  })
- // console.log(search.value); 
-});
 
 
-}
-
-console.log(getProducts());
+getProducts().then((item)=> console.log(item)); // just call it, no need console.log
