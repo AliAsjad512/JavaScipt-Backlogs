@@ -77,6 +77,23 @@ const courses = {
   },
 };
 
-let keys = Object.keys(courses);
 
-keys.forEach(key=>console.log(key));
+let empt={};
+function Credit(credits){
+ return credits > 3 ? "ok" : "low"
+
+}
+
+const creditHoursObj = Object.entries(courses).reduce((acc, [id, value]) => {
+      let k=  Credit(value.creditHours);
+    console.log(k)
+      
+   acc[k] =value.creditHours ;
+// console.log(acc[id]=value.creditHours);
+  return acc;
+}, {});
+
+
+
+//console.log(creditHoursObj)
+
