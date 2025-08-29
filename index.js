@@ -26,3 +26,14 @@ var groupBy = function(xs, key) {
 // or newer
 
 console.log({...Object.groupBy(['ok', 'low', 'high'], ({length}) => length)})
+
+
+
+
+
+const obj1 = { name: "Ali", address: { city: "NY" } };
+const obj2 = obj1; 
+
+obj2.address.city = "LA";
+
+console.log(obj1.address.city); 
