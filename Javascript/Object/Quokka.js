@@ -84,15 +84,29 @@ function Credit(credits){
 
 }
 
-const creditHoursObj = Object.entries(courses).reduce((acc, [id, value]) => {
-      let k=  Credit(value.creditHours);
-    console.log(k)
+let creditHoursObj = Object.entries(courses).reduce((acc, [id, value]) => {
+      let k = Credit(value.creditHours);
+      if(!acc[k])
+        acc[k] =[];
+        acc[k].push(value.creditHours)
+
+      return acc;
       
-   acc[k] =value.creditHours ;
-// console.log(acc[id]=value.creditHours);
-  return acc;
+   
+
+  
 }, {});
 
+// creditHoursObj.forEach(element => {
+//   console.log(element)
+// })
 
+// console.log(creditHoursObj)
+
+Object.entries(creditHoursObj).forEach(([key, value]) => {
+  console.log(key,value)
+});
+
+//console.log(empt);
 
 
