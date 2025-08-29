@@ -12,14 +12,17 @@
 
 
 var groupBy = function(xs, key) {
+    
   return xs.reduce(function(rv, x) {
+    
     (rv[x[key]] ??= []).push(x);
+    
     return rv;
   }, {});
 };
 
-console.log(groupBy(['one', 'two', 'three'], 'length'));
+//console.log(groupBy(['one', 'two', 'three'], 'length'));
 
 // or newer
 
-console.log({...Object.groupBy(['one', 'two', 'three'], ({length}) => length)})
+console.log({...Object.groupBy(['ok', 'low', 'high'], ({length}) => length)})

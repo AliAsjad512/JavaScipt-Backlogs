@@ -95,5 +95,4 @@ const creditHoursObj = Object.entries(courses).reduce((acc, [id, value]) => {
 
 
 
-//console.log(creditHoursObj)
 
