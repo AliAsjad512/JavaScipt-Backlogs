@@ -86,40 +86,40 @@ console.log(totalSales);
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-import java.util.HashMap;
-class Main {
-    public static void main(String[] args) {
-      //  System.out.println("Try programiz.pro");
+// import java.util.HashMap;
+// class Main {
+//     public static void main(String[] args) {
+//       //  System.out.println("Try programiz.pro");
       
-      HashMap<Character, Integer> sr = new HashMap<>();
-     String s ="pwwkew";
-        int p1=0;
-       int p2=0;
-       int maxLength=0;
-       int length=0;
+//       HashMap<Character, Integer> sr = new HashMap<>();
+//      String s ="pwwkew";
+//         int p1=0;
+//        int p2=0;
+//        int maxLength=0;
+//        int length=0;
        
-        while(p2<s.length()){
-                 char currentChar = s.charAt(p2);
-                 int index = p2;
-        if(sr.containsKey(currentChar)){
+//         while(p2<s.length()){
+//                  char currentChar = s.charAt(p2);
+//                  int index = p2;
+//         if(sr.containsKey(currentChar)){
          
-       // p1 = Math.max(p1, sr.get(currentChar) + 1);
-        p1++;
-    // p1=p2+1;
+//        // p1 = Math.max(p1, sr.get(currentChar) + 1);
+//         p1++;
+//     // p1=p2+1;
            
-        }
-         sr.put(currentChar, p2);
+//         }
+//          sr.put(currentChar, p2);
 
     
-    maxLength = Math.max(maxLength, p2 - p1 + 1);
-    System.out.println("maxLength "+ maxLength);
-             p2++;
+//     maxLength = Math.max(maxLength, p2 - p1 + 1);
+//     System.out.println("maxLength "+ maxLength);
+//              p2++;
        
-        }
-           // System.out.println(maxLength);
+//         }
+//            // System.out.println(maxLength);
       
       
       
       
-    }
-}
+//     }
+// }
