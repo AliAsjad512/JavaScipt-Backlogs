@@ -80,3 +80,49 @@ Have all professor name according to suject wise
   
 
 
+
+
+
+    Making PRD of Campus Connect 
+
+
+Objective 
+Campus Connect – A platform for students to share notes, events, and study groups.
+
+## Scope
+Make 3 cards share notes, events and study group
+Have user profile 
+Make sure have pictures of notes, events and study group 
+Each card further have cards 
+Search On the homepage
+Donation payment to upload costy resources 
+
+### P1
+- Clear picture of notes 
+- Pictures of events
+- Make group department vise
+- Send reminders to student about the events
+-  
+### p2
+- AI integration
+- chatbot to if someone need help
+
+User stories 
+
+So when user click on notes it displays all notes to user
+There should be a section where student go and check their notes relevant to his study.
+
+Events are more like workshop that’s happening in the college 
+User click on the events and see upcoming events
+User can do online registration  instead of walk in to workshop department 
+
+Study group have access to audio and video call
+
+They can talk with each other online 
+
+Technical requirement 
+
+Reactjs
+Shadcn
+Mongodb
+Nodejs expressjs
