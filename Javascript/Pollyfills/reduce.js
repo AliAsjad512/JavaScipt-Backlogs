@@ -38,21 +38,7 @@ console.log(totalSales);
 
 
 
-// import java.util.HashMap;
-// import java.util.Map;
 
-// public class HashMapExample {
-//     public static void main(String[] args) {
-//         HashMap<String, Integer> studentScores = new HashMap<>();
-//         studentScores.put("Alice", 95);
-//         studentScores.put("Bob", 88);
-//         studentScores.put("Charlie", 72);
-
-//         for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
-//             System.out.println("Student: " + entry.getKey() + ", Score: " + entry.getValue());
-//         }
-//     }
-// }
 
 
 
