@@ -29,9 +29,24 @@ function applyOperation(a,b,operation){
 const result = applyOperation(5,4,(x,y) => x/y);
 console.log(result);
 
+function createCounter(){
+    let count = 0;
+    return function(){
+        count++;
+        return count;
+    }
+}
 
 
 
+const counter = createCounter();
+console.log(counter());
+
+(function(){
+    console.log("Ali");
+})()
+
+()()
 
 
 
