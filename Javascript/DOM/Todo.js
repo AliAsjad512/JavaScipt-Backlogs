@@ -1,28 +1,23 @@
 
-const AddValue = document.getElementById('add');
-const resultValue = document.getElementById('Input');
-const MainDiv = document.getElementById('main');
 
-//console.log(resultValue)
-AddValue.addEventListener('click',() =>{
-    const InputValue = resultValue.value;
-     console.log(InputValue)
-      const ListDiv =document.createElement('div');
-    const liItem =document.createElement('li');
-    const ExitBtn= document.createElement('p');
-    ExitBtn.innerHTML = 'X';
 
-    
-    liItem.innerHTML = InputValue;
-    ListDiv.appendChild(liItem,ExitBtn)
-      ListDiv.appendChild(ExitBtn)
-    MainDiv.appendChild(ListDiv)
-    ocalStorage.setItem("set",JSON.stringify("MainDive"));
-    ExitBtn.addEventListener('click',() =>{
-        MainDiv.remove(ListDiv)
-        MainDiv.remove(ExitBtn)
-    })
 
-    
+const addBtn = document.getElementById('add-btn');
+const todoInput = document.getElementById('todo-input');
+const todoItemsContainer = document.getElementById('todo-items-container');
+
+addBtn.addEventListener('click',() =>{
+  const value = todoInput.value;
+  const li = document.createElement('li');
+  li.innerText = value;
+  const delBtn= document.createElement('button');
+  delBtn.innerText='X';
+  todoItemsContainer.appendChild(li);
+  li.appendChild(delBtn)
+  delBtn.addEventListener('click',function(){
+    li.remove()
+  })
+  todoInput.value =''
+  //todoItemsContainer.appendChild(delBtn)
+
 })
-
