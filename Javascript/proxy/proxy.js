@@ -11,13 +11,13 @@ function enableNegIndexing(targetArr) {
   });
 }
 
-//enableNegIndexing(arr)
+const proxyArr=enableNegIndexing(arr)
 
 //const proxyArr = enableNegIndexing(arr);
-const proxyArr = enableNegIndexing([...arr, 11]);
+//const proxyArr = enableNegIndexing([...arr, 11]);
 console.log(`Original Arr`, arr);
 console.log(`ProxyArr Arr`, proxyArr);
 
-proxyArr[1] = 111;
+arr[1] = 111;
 console.log(`Updated Arr`, arr);
 console.log(`ProxyArr updated Arr`, proxyArr);
