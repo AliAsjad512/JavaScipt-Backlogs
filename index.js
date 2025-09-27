@@ -83,6 +83,30 @@ return acc+sale.price;
 console.log(totalSales);
 
 
+// reduceExample.js
+
+// Example: Sum of numbers
+const numbers = [2, 4, 6, 8, 10];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log("Sum:", sum); // Output: 30
+
+// Example: Count word occurrences
+const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+const wordCount = words.reduce((acc, word) => {
+  acc[word] = (acc[word] || 0) + 1;
+  return acc;
+}, {});
+console.log("Word Count:", wordCount); 
+// Output: { apple: 3, banana: 2, orange: 1 }
+
+// Example: Flatten nested arrays
+const nested = [[1, 2], [3, 4], [5, 6]];
+const flat = nested.reduce((acc, curr) => acc.concat(curr), []);
+console.log("Flattened Array:", flat); 
+// Output: [1, 2, 3, 4, 5, 6]
+
+
+
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
